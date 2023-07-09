@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Content Management Tool</title>
+  <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+  <script src="script.js"></script>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+</head>
+
+<body>
+  <h1>CONTENT MANAGEMENT TOOL</h1>
+  <div class="card" style="height:12cm; width: 15cm;">
+    <div class="input-section">
+      <b><label class="label-section" for="title">TITLE:</label></b>
+      <textarea class="div-section" cols="50" type="text" id="title" placeholder="Enter title" required></textarea>
+    </div>
+
+    <div class="input-section">
+      <b><label class="label-section" for="content">CONTENT:</label></b>
+      <textarea class="div-section" cols="100" type="text" id="content" placeholder="Enter content" required></textarea>
+    </div>
+
+    <div class="input-section">
+      <b><label class="label-section" for="image">IMAGE:</label></b>
+      <input type="file" id="image" accept="image/*">
+    </div>
+
+    <div class="input-section">
+      <b><label class="label-section" for="video">VIDEO:</label></b>
+      <input type="file" id="video" accept="video/*">
+    </div>
+  </div>
+  <br>
+  <br>
+  <div style="text-align: center;">
+    <button onclick="submitForm()">SUBMIT</button>
+  </div>
+  
+  <div class="data-container">
+    <div class="data-section" id="dataSection">
+    </div>
+  </div>
+</body>
+
+</html>
